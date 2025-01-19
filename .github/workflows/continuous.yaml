@@ -1,0 +1,15 @@
+name: Continuous
+
+on:
+  push:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run tests
+      run: cargo test --verbose
