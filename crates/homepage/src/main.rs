@@ -27,8 +27,6 @@ fn main() {
     }
 }
 
-fn hello() {}
-
 struct Link {
     href: String,
     text: String,
